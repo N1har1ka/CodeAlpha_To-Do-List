@@ -18,7 +18,7 @@ function addTask() {
     const li = document.createElement('li');
 
     li.innerHTML = `
-        <span>${taskValue}</span>
+        <span>${taskVal}</span>
         <div class="lidiv">
           <button class="complete">✔</button>
           <button class="delete">❌</button>
