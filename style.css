@@ -1,5 +1,5 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body{
+    font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(to right, #00c6ff, #0072ff);
     display: flex;
     justify-content: center;
@@ -7,40 +7,35 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
 }
-
-.card {
+.card{
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     padding: 30px;
-    max-width: 460px; /* Set a narrower max width */
+    max-width: 460px;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
 }
-
-h1 {
+h1{
     margin-bottom: 20px;
     color: #333;
     font-size: 1.6em;
 }
-
-.input-group {
+.inputdiv{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
-
-input[type="text"] {
+input[type="text"]{
     flex: 1;
     padding: 10px;
     border: 2px solid #ddd;
@@ -50,12 +45,10 @@ input[type="text"] {
     transition: border-color 0.3s ease;
     box-sizing: border-box;
 }
-
-input[type="text"]:focus {
+input[type="text"]:focus{
     border-color: #0072ff;
 }
-
-button {
+button{
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -65,20 +58,17 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-button:hover {
+button:hover{
     background-color: #005bb5;
 }
-
-ul {
+ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
-li {
+li{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
@@ -87,48 +77,31 @@ li {
     margin-bottom: 10px;
     position: relative;
 }
-
-li.completed {
+li.completed{
     text-decoration: line-through;
     color: #999;
 }
-
-button.complete {
+button.complete{
     background-color: #28a745;
 }
-
-button.complete:hover {
+button.complete:hover{
     background-color: #218838;
 }
-
-button.delete {
+button.delete{
     background-color: #ff4d4d;
 }
-
-button.delete:hover {
+button.delete:hover{
     background-color: #cc0000;
 }
-
-@media (max-width: 600px) {
-    .input-group {
+@media (max-width:600px) {
+    .inputdiv{
         flex-direction: column;
     }
-
-    button {
+    button{
         width: 100%;
         margin-top: 10px;
     }
-
-    input[type="text"] {
+    input[type="text"]{
         width: 100%;
-    }
-    li {
-        flex-direction: row; /* Ensure items are in a row */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        justify-content: space-between; /* Align items to the ends */
-    }
-
-    .lidiv {
-        margin-left: 10px; /* Space between text and buttons */
     }
 }
